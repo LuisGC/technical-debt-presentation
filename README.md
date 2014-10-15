@@ -1,7 +1,7 @@
 technical-debt-presentation
 =======================
 
-Technical Presentation (in Spanish, but I'll translate it) about '''Technical Debt''' by [Luis García Castro](https://github.com/LuisGC)
+Technical Presentation (in Spanish, but I'll translate it) about Technical Debt by [Luis García Castro](https://github.com/LuisGC)
 
 # Content
 
