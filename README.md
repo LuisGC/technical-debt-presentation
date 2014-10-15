@@ -19,6 +19,10 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
 
 * [impress.js](https://github.com/bartaz/impress.js)
 
+# License
+
+[Creative Commons CC-BY-SA] (http://creativecommons.org/licenses/by-sa/3.0/es/)
+
 # Bibliography
 
 * [Ward Cunningham: The WyCash Portfolio Management System] (http://c2.com/doc/oopsla92.html)
