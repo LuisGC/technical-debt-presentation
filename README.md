@@ -1,4 +1,4 @@
-technical-debt-seminary
+technical-debt-presentation
 =======================
 
-Technical Seminary about Technical Debt by Luis García Castro
+Technical Presentation about Technical Debt by Luis García Castro
