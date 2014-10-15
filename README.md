@@ -1,18 +1,17 @@
 technical-debt-presentation
 =======================
 
-Technical Presentation (in Spanish, but I'll translate it) about Technical Debt by [Luis García Castro](https://github.com/LuisGC)
+Technical Presentation (in Spanish, but I'll translate it) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
 
 # Content
 
-* Introduction to Technical Debt
-** Analogies with financial debt
-** Types of technical debt
-** Symptoms
-* How, when and why acquire debt?
-* Technical debt vs bad code
-* Paying the technical debt
-
++ Introduction to Technical Debt
+ + Analogies with financial debt
+ + Types of technical debt
+ + Symptoms
++ How, when and why acquire debt?
++ Technical debt vs bad code
++ Paying the technical debt
 
 # Resources
 
