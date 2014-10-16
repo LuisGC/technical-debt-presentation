@@ -18,6 +18,7 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
 # Resources
 
 * [impress.js](https://github.com/bartaz/impress.js)
+* [impress-console](https://github.com/regebro/impress-console)
 
 # License
 
