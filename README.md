@@ -17,8 +17,8 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
 
 # Resources
 
-* [impress.js](https://github.com/bartaz/impress.js)
-* [impress-console](https://github.com/regebro/impress-console)
+* [impress.js](https://github.com/bartaz/impress.js) - An open source presentation framework based on the power of HTML5 and CSS3 transforms and transitions
+* [impress-console](https://github.com/regebro/impress-console) - module that provides a speaker console for impress.js presentations
 
 # License
 
