@@ -1,7 +1,7 @@
 Technical Debt for developers... ¡and managers!
 ====
 
-Technical Presentation (in Spanish, but I'll translate it) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
+Technical Presentation (now in English!!) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
 
 View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https://luisgc.github.com/technical-debt-presentation)
 
@@ -11,9 +11,9 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
  + Analogies with financial debt
  + Types of technical debt
  + Symptoms
-+ How, when and why acquire debt?
-+ Technical debt vs bad code
-+ Paying the technical debt
++ How, when and why borrow?
++ Technical debt vs low quality code
++ Paying off the technical debt
 
 # Resources
 
