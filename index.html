@@ -8,7 +8,7 @@
         <meta name="description" content="Seminario de Deuda Técnica a cargo de Luis García Castro" />
         <meta name="author" content="Luis García Castro" />
         <meta name="keywords" content="Presentation, Deuda Técnica, Technical Debt, Presentación, Seminario" />  
-        <title>Deuda Técnica - Luis García Castro</title>
+        <title>Technical debt - Luis García Castro</title>
         
 		<link rel="stylesheet" href="css/style.css" />
 		
@@ -26,49 +26,49 @@
 		
 		<div id="titulo" class="step slide with_height" data-x="3500" data-y="2000" data-z="1000" data-scale="5" data-rotate-x="-25" >
 			<div class="title">
-				<p><em>Deuda Técnica</em></p>
+				<p><em>Technical debt</em></p>
 			</div>
 			<div class="subtitle">
-				<p>Para desarrolladores... ¡y managers!</p>
+				<p>For developers... and managers!</p>
 			</div>
 			<div class="author">
-				<p>Octubre 2014 <br />Luis García Castro</p>
+				<p>November 2015 <br />Luis García Castro</p>
 			</div>
 		</div>
 
 		<div id="comentarios-recurrentes" class="step slide" data-x="3500" data-y="2000" data-z="-20000" data-scale="1">
 			<div class="section-title">
-				<h4>Comentarios recurrentes</h4>
+				<h4>Recurring comments</h4>
 			</div>
 			
 			<div class="notes">
 				<ul>
-					<li>¿No teníamos documentados estos servicios?</li>
-					<li>Pensé que habíamos probado este módulo...</li>
-					<li>Si arreglo esto se romperá eso otro... creo</li>
-					<li>No toques eso, la última vez que alguien tocó se rompió XXX</li>
-					<li>Pon un comentario y ya lo miraremos después</li>
-					<li>Pon un TODO y ya lo miraremos después</li>
-					<li>Pon un comentario, ahí justo encima del TODO</li>
-					<li>¡Yo sólo toqué una línea!</li>
+					<li>Have we not documented this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that... I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
 				</ul>
 			</div>
 		</div>
 
 		<div id="sondeo" class="step slide" data-x="2500" data-y="-1000" data-scale="3" data-rotate="-30">
 			<div class="section-title">
-				<h3>La deuda técnica... <br /><em>¿es buena o mala?</em></h3>
+				<h3>Technical Debt... <br /><em>is it good or bad?</em></h3>
 			</div>
 		</div>
 
 		<div id="motivos" class="step slide" data-x="8000" data-y="-500" data-scale="4">
-			<div class="slide-title">Motivos para dar esta charla</div>
+			<div class="slide-title">My reasons to give this talk</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li>Orientar al personal técnico sobre la toma de <em>decisiones de negocio</em></li>
-					<li>Orientar al personal de negocio sobre la toma de <em>decisiones técnicas</em></li>
-					<li>Ayudar a que la deuda técnica pueda ser gestionada de forma más <em>explícita y transparente</em></li>
-					<li><em>Aumentar la conciencia</em> sobre este asunto</li>
+					<li>Some guidance to technical staff about how <em>business decissions</em> are made</li>
+					<li>Some guidance to business staff about how <em>technical decissions</em> are made</li>
+					<li>Help to manage technical debt in a more <em>explicit and transparent</em> manner</li>
+					<li>Raise <em>awareness</em> on this issue</li>
 				</ul>
 			</div>
 		</div>
@@ -77,28 +77,28 @@
 
 		<div id="contenido" class="step slide" data-x="8500" data-y="2500" data-scale="5">
 			<div class="slide-title">
-				<h3><em>Contenido</em></h3>
+				<h3><em>Content</em></h3>
 			</div>
 			<div class="slide-content">
 				<ol class="lv0_indent">
-					<li>Introducción a la deuda técnica</li>
+					<li>Introduction to tecnnical debt</li>
 					<ul class="lv1_indent">
-						<li>Analogías con la deuda financiera</li>
-						<li>Tipos de deuda financiera</li>
-						<li>Síntomas</li>
+						<li>Analogies with financial debt</li>
+						<li>Types of technical debt</li>
+						<li>Symptoms</li>
 					</ul>
-					<li>Cómo, cuándo y por qué endeudarse</li>
-					<li>Deuda técnica vs código de mala calidad</li>
-					<li>Pagando la deuda técnica</li>
+					<li>How, when and why <i>borrow</i></li>
+					<li>Technical debt vs low quality code</li>
+					<li>Paying off technical debt</li>
 				</ol>
 			</div>
 		</div>
 		
 		<div id="intro" class="step slide" data-x="9000" data-y="4000" data-rotate="90">
-			<div class="slide-title"><em>Introducción</em></div>
+			<div class="slide-title"><em>Introduction</em></div>
 			<div class="slide-content">
 				<p><i>Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.</i></p>
-				<p><b><em>Ward Cunningham</em>, Marzo de 1992</b></p>
+				<p><b><em>Ward Cunningham</em>, March 1992</b></p>
 			</div>
 			<div class="notes">
 				<ul>
@@ -115,106 +115,106 @@
 		</div>
 
 		<div id="analogias" class="step slide" data-x="8000" data-y="4000">
-			<div class="slide-title"><em>Analogías</em> con la deuda financiera</div>
+			<div class="slide-title"><em>Analogies</em> with financial debt</div>
 			<div class="slide-content">
 				<ul class="lv2_indent">
-					<li><p><em>Interés</em></p></li>
-					<li><p>Amortizar <em>capital</em></p></li>
-					<li><p>Ampliar un <em>préstamo</em></p></li>
-					<li><p><em>Bancarrota</em></p></li>
-					<li><p><em>Inflación</em> técnica</p></li>
-					<li><p>Amnistía <em>fiscal</em></p></li>
+					<li><p><em>Interest</em></p></li>
+					<li><p><em>Capital</em> pay off</p></li>
+					<li><p>Extending a <em>loan</em></p></li>
+					<li><p><em>Bankruptcy</em></p></li>
+					<li><p>Technical <em>inflation</em></p></li>
+					<li><p>fiscal <em>amnesty</em></p></li>
 				</ul>
 			</div>
 			<div class="notes">
 				<ol type="a">
-					<li>Interés - Cada minuto que pasas con código poco limpio</li>
-					<li>Amortizar - Refactorizar</li>
-					<li>Ampliar un préstamo - Las negligencias de diseño</li>
-					<li>Bancarrota - Situación con un interés sobre la deuda tan grande que es imposible avanzar y es necesario una reescritura completa</li>
-					<li>Inflación Técnica - Cuando el actual nivel de nuestra tecnología es suficientemente viejo como para perder compatibilidad con el resto de la industria</li>
-					<li>Aminstía Fiscal - Desechar prototipos, productos o componentes y renunciar a usarlos</li>
+					<li>Interest - Every minute you spend with not very clean code</li>
+					<li>Capital Pay off - Refactoring</li>
+					<li>Extending a loan - Design negligencies</li>
+					<li>Bankruptcy - Situation with an interest over the debt so large that it is impossible to move forward and we need a complete rewrite</li>
+					<li>Technical Inflation - When the current level of our technology is old enough to lose compatibility with the rest of the industry</li>
+					<li>Fiscal Amnesty - Discard prototypes, products or components and renounce to use them</li>
 				</ol>
 			</div>
 		</div>
 
 		<div id="tipos-de-deuda" class="step slide" data-x="7000" data-y="4000" data-rotate="90">
-			<div class="slide-title">Tipos de deuda técnica</div>
+			<div class="slide-title">Types of technical debt</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li><em>Intencionada vs NO intencionada</em></li>
-					<li>Deuda de <em>diseño o arquitectura</em></li>
-					<li>Deuda de <em>calidad</em></li>
-					<li>Deuda en los <em>tests</em></li>
-					<li>Deuda en el <em>conocimiento</em> y la documentación</li>
-					<li>Deuda en el <em>entorno</em></li>
+					<li><em>Intended vs NOT intended</em></li>
+					<li><em>Design or architecture</em> debt</li>
+					<li><em>Quality</em> debt</li>
+					<li><em>Testing</em> debt</li>
+					<li><em>Knowledge</em> and documentation debt</li>
+					<li><em>Environmental</em> debt</li>
 				</ul>
 			</div>
 			<div class="notes">
 				<ul>
-				<li>Intencionada: “No hay tiempo para hacerlo multi-idioma, ya se hará en el futuro”</li>
-				<li>Intencionada: “No hay tiempo para completar los test, ya lo haremos cuando subamos a PRO”</li>
-				<li>No intencionada: Dejar que alguien escriba código que no sigue cierto estándar</li>
-				<li>No intencionada: Una decisión importante de diseño que finalmente fracasa</li>
-				<li>No intencionada: Dejar sin supervisión al programador junior</li>
-				<li>Diseño: soluciones no óptimas, atajos</li>
-				<li>Tests: Pocos test automáticos y demasiadas pruebas de regresión</li>
-				<li>Documentación: Sólo unos pocos conocen el sistema</li>
-				<li>Hardware, entornos,... demasiadas acciones manuales</li>
+				<li>Intended: “No time to do it multi-language, that will be done in the future”</li>
+				<li>Intended: “No time to complete the tests, that will be done when we deploy this in PRO”</li>
+				<li>Not intended: Letting someone to write code that does not follow a certain standard</li>
+				<li>Not intended: An important design decission that ultimately fails</li>
+				<li>Not intended: Left the junior programmer unsupervised</li>
+				<li>Design: non optimal solutions, shortcuts</li>
+				<li>Tests: Not many automatic tests and too many regression testing</li>
+				<li>Documentation: Only a few properly know the system</li>
+				<li>Hardware, environments,... too many manual actions</li>
 				</ul>
 				 
 			</div>
 		</div>
 
 		<div id="sintomas" class="step slide" data-x="6250" data-y="4000">
-			<div class="slide-title">Síntomas</div>
+			<div class="slide-title">Symptoms</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li><p>Pérdida de <em>productividad</em>, <em>motivación</em>, ...</p></li>
-					<li><p>Incremento en los <em>test manuales</em></p></li>
-					<li><p><em>Retrasos</em> en entregas</p></li>
-					<li><p><em>Código duplicado</em></p></li>
-					<li><p>Código <em>ilegible</em></p></li>
-					<li><p>Incremento imparable de <em>defectos</em></p></li>
-					<li><p><em>Excesivo estrés</em> en cada entrega</p></li>
-					<li><p><em>Miedo</em> a tocar el código</p></li>
-					<li><p>Librerías <em>anticuadas</em></p></li>
+					<li><p>Loss of <em>productivity</em>, <em>motivation</em>, ...</p></li>
+					<li><p>Increase in <em>manual testing</em></p></li>
+					<li><p>Repeated <em>delays</em> in deliveries</p></li>
+					<li><p><em>Duplicated code</em></p></li>
+					<li><p><em>Unreadable</em> code</p></li>
+					<li><p>Unstoppable increase in <em>bugs</em></p></li>
+					<li><p><em>Excessive stress</em> on each delivery</p></li>
+					<li><p><em>Fear</em> to touch the code</p></li>
+					<li><p><em>Outdated</em> libraries</p></li>
 				</ul>
 			</div>
 			<div class="notes">
 				<ol type="a">
-					<li>Siempre que podamos medir la productividad (Scrum)</li>
-					<li>Dedicamos demasiado tiempo a pruebas de regresión</li>
-					<li>Cada vez es más difícil cumplir los deadlines</li>
-					<li>Conduce a anomalías y problemas en el soporte</li>
-					<li>Falta de calidad y control</li>
-					<li>El equipo sufre demasiada presión</li>
-					<li>El 80% del tiempo se pasa leyendo código, si no se entiende no se puede construir</li>
-					<li>Es todo tan delicado que no hay forma de tocar sin romper nada</li>
-					<li>Y no somos capaces de actualizar las versiones</li>
+					<li>Whenever we can, we measure productivity (Scrum)</li>
+					<li>We spend too much time in regression testing</li>
+					<li>It is increasingly difficult to meet the deadlines</li>
+					<li>Leads to anomalies and support problems</li>
+					<li>Lack of quality and control</li>
+					<li>The teams suffers too much pressure</li>
+					<li>80% of of the time is spent reading code, if not understood can not be built</li>
+					<li>It's all so delicate that there is no way to touch without breaking anything</li>
+					<li>We are not able to update versions</li>
 				</ol>
 			</div>
 		</div>
 
 		<div id="ventajas-e-inconvenientes" class="step slide" data-x="6500" data-y="5000" data-rotate="-90">
-			<div class="slide-title">Ventajas e incovenientes</div>
+			<div class="slide-title">Advantages and disadvantages</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
 					<li>
-						<p>Algunas ventajas:</p>
+						<p>Some advantages:</p>
 						<ul class="lv1_indent">
-							<li>Se acorta el <em>Time To Market</em></li>
-							<li>Se preserva el <em>capital</em> de la compañía (esencial en startups)</li>
-							<li>Se <em>aplazan</em> decisiones y ciertos costes de desarrollo</li>
+							<li>It shortens <em>Time To Market</em></li>
+							<li>It preserves the company <em>capital</em> (essential in startups)</li>
+							<li>Certain decisions and developtment costs are <em>postponed</em></li>
 						</ul> 
 					</li>
 					<li>
-						<p>Y algunos inconvenientes:</p>
+						<p>And some disadvantages:</p>
 						<ul class="lv1_indent">
-							<li>Reduce la <em>velocidad</em> y la <em>productividad</em></li>
-							<li>Aumenta el <em>riesgo</em></li>
-							<li><em>Limita</em> los nuevos desarrollos</li>
-							<li>Conduce a un <em>círculo vicioso</em></li>
+							<li>Reduces <em>speed</em> and <em>productivity</em></li>
+							<li>Increases the <em>risk</em></li>
+							<li><em>Restricts</em> new developments</li>
+							<li>Leads to a <em>vicious circle</em></li>
 						</ul> 
 					</li>
 				</ul>
@@ -230,39 +230,39 @@
 
 
 		<div id="como-evitar-la-deuda" class="step slide" data-x="7500" data-y="5000">
-			<div class="slide-title">Cómo evitar deuda no intencionada</div>
+			<div class="slide-title">Avoiding unintended debt</div>
 			<div class="slide-content">
 				<ul>
-					<li><p>Automatiza (IC) los test todo lo posible (<em>¡unitarios y funcionales!</em>)</p></li>
-					<li><p><em>Comparte</em> el conocimiento (técnico y funcional)</p></li>
-					<li><p>Deja siempre el código tan <em>limpio</em> como lo encontraste, o si es posible <em>mejor</em></p></li>
-					<li><p>Concreta (si no lo hiciste ya) una buena <em>DoD</em></p></li>
+					<li><p>Automate tests as much as possible (<em>CI</em> )</p></li>
+					<li><p><em>Share</em> the knowledge (technical and functional)</p></li>
+					<li><p>Leave the code <em>cleaner</em> than you found it</p></li>
+					<li><p>Settle on a good <em>DoD</em></p></li>
 					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
-					<li><p>Limita el WIP, siempre</p></li>
-					<li><p><em>Monitoriza</em> en cada momento la deuda</p></li>
-					<li><p>Y en definitiva: <em>Nunca pidas permiso para hacer tu trabajo correctamente</em></p></li>
+					<li><p>Limit the WIP, always</p></li>
+					<li><p><em>Monitor</em> the debt at every moment</p></li>
+					<li><p>And finally: <em>Never ask for permission to do your job properly</em></p></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div id="como-endeudarse" class="step slide" data-x="8500" data-y="5000" data-rotate="90">
-			<div class="slide-title">Cómo endeudarse intencionadamente</div>
+			<div class="slide-title">How to borrow intentionally</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li>Toda la deuda intencionada <em>puede y debe ser trazada</em> (por definición)</li>
-					<li>Con la misma consideración que un <em>defecto</em></li>
-					<li>Incluye tu deuda en el <em>Product Backlog</em></li>
-					<li>Monitoriza la <em>velocidad</em> del proyecto</li>
-					<li>Monitoriza la cantidad de <em>retrabajo</em></li>
-					<li>Adapta tus presupuestos</li>
-					<li><em>Mide la deuda en dinero</em></li>
+					<li>All the inended debt <em>can and should be monitored</em> (by definition)</li>
+					<li>With the same consideration as <em>flaws or bugs</em></li>
+					<li>Include your debt in the <em>Product Backlog</em></li>
+					<li>Monitor the <em>speed</em> of the project/teams</li>
+					<li>Monitor the amount of <em>rework</em></li>
+					<li>Adapt your budgets</li>
+					<li><em>Measure debt in money</em></li>
 				</ul>
 			</div>
 		</div>
 
 		<div id="deuda-vs-mala-calidad" class="step slide" data-x="5000" data-y="-1000" data-scale="3" data-rotate="30">
 			<div class="section-title">
-				<h3>Deuda técnica <br /><em>vs</em> <br />Código de mala calidad</h3>
+				<h3>Technical debt <br /><em>vs</em> <br />Low quality code</h3>
 			</div>
 			<div class="notes">
 				<ul>
@@ -280,7 +280,7 @@
 
 		<div id="pagando-la-deuda" class="step slide" data-x="-250" data-y="-1500" data-scale="3">
 			<div class="section-title">
-				<h3><em>Pagando</em><br />la deuda técnica</h3>
+				<h3><em>Paying</em><br /> technical debt</h3>
 			</div>
 			<div class="notes">
 				<ul>
@@ -298,41 +298,41 @@
 		</div>
 		
 		<div id="antes-de-pagar" class="step slide" data-x="-1000" data-y="-250" data-rotate="-90" data-scale="2">
-			<div class="slide-title"><em>Antes</em> de pagar la deuda técnica</div>
+			<div class="slide-title"><em>Before</em> paying the debt...</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li>¿Hemos estimado cuánto cuesta pagar y cuánto no pagar?</li>
-					<li>¿Nos creemos esas estimaciones?</li>
-					<li>¿Cuánto reduciremos el esfuerzo actual para dedicarlo a deuda?</li>
-					<li>¿Cuánto cuesta una solución <i>sucia</i>?</li>
-					<li>¿Cuánto cuesta una solución <i>limpia</i>?</li>
-					<li>¿Cuánto costaría hacer la solución <i>limpia</i> si haremos ahora la <i>sucia</i>?</li>
+					<li>Have we estimated how much it costs paying and not paying?</li>
+					<li>Do we believe the estimates?</li>
+					<li>How will we reduce the current effort to spend it on debt?</li>
+					<li>How much does a <i>dirty</i> solution cost?</li>
+					<li>How much does the <i>clean</i> solution cost?</li>
+					<li>How much will the <i>clean</i> solution cost if we do the <i>dirty</i> one now?</li>
 				</ul>
 			</div>
 		</div>
 
 		<div id="como-se-paga" class="step slide" data-x="500" data-y="-250" data-rotate="90" data-scale="2">
-			<div class="slide-title">Cómo se paga la deuda técnica</div>
+			<div class="slide-title">How to pay off technical debt</div>
 			<div class="slide-content">
 				<ol class="lv0_indent">
-					<li>Comenta con los responsables <em>técnicos</em> tu propuesta y el alcance de la misma</li>
-					<li><em>Mide</em> con ellos la deuda que queréis pagar</li>
-					<li>Comunica claramente las <em>implicaciones</em> a los responsables de negocio</li>
-					<li>Logra decisiones <em>explícitas</em> sobre si se debe amortizar <em>más o menos</em> deuda</li>
-					<li>Diseña estrategias para evitar que al pagar se genere <em>nueva deuda</em></li>
-					<li>Toma decisiones <em>explícitas</em> sobre <em>cuándo y cómo</em> se va a pagar</li>
+					<li>Discuss with the <em>technicians</em> in charge your proposal and its scope</li>
+					<li><em>Measure</em> with them the debt you want to pay</li>
+					<li>Clearly communicate the <em>implications</em> to the business managers</li>
+					<li>Achieve <em>explicit</em> decisions about wheter to pay off <em>more or less</em> debt</li>
+					<li>Design strategies to avoid generating <em>new debt</em> when paying off</li>
+					<li>Take <em>explicit</em> decisions about <em>when and how</em> you will pay off</li>
 				</ol>
 			</div>
 		</div>
 
 		<div id="preguntas" class="step slide" data-x="3500" data-y="3400" data-scale="3" data-rotate-y="90">
 			<div class="section-title lower">
-				<h3>¿Preguntas?</h3>
+				<h3>Questions ?</h3>
 			</div>
 		</div>
 
 		<div id="bibliografia" class="step slide" data-x="3500" data-y="4500" data-scale="4">
-			<div class="slide-title">Bibliografía</div>
+			<div class="slide-title">Bibliography</div>
 			<div class="slide-content">
 
 				<p class="bibliografia">
@@ -388,15 +388,12 @@
 		</div>
 		
 		<div id="gracias" class="step slide" data-y="3500" data-scale="5">
-			<div id="ty" class="slide-title"><h2>¡ Gracias !</h2></div>
+			<div id="ty" class="slide-title"><h2>Thanks !</h2></div>
 			<div class="slide-content">
-				<br />
 				<p id="name">
 					<em>Luis García Castro</em>
 				</p>
-				<p id="email">
-					<a href="mailto:luis.garcia@sopra.com">luis.garcia@sopra.com</a>
-				</p>
+				<br />
 				<p id="gplus">
 					<a href="mailto:luisgc@gmail.com">
 						<img src="img/social/google-plus.png" alt="Google Plus" class="rounded_icon" />
@@ -419,13 +416,13 @@
 				<p id="creativeCommons">
 					<a href="http://creativecommons.org/licenses/by-sa/3.0/es/">
 						<img src="img/creative-commons.png" alt="Creative Commons" class="rounded_icon" />
-						<span class="footer"><i>Licencia Creative Commons <em>CC-BY-SA</em></i></span>
+						<span class="footer"><i>Creative Commons <em>CC-BY-SA</em> license</i></span>
 					</a>
 				</p>
 				<p id="openSource">
 					<a href="https://github.com/bartaz/impress.js">
 						<img src="img/open-source-logo.png" alt="Impress.js" class="rounded_icon" />
-						<span class="footer">Presentación realizada con la herramienta Open Source <em>Impress.js</em></span>
+						<span class="footer">Presentation made with the Open Source tool <em>Impress.js</em></span>
 					</a>
 				</p>
 								
