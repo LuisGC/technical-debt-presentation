@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <meta name="description" content="Seminario de Deuda Técnica a cargo de Luis García Castro" />
+        <meta name="author" content="Luis García Castro" />
+        <meta name="keywords" content="Presentation, Deuda Técnica, Technical Debt, Presentación, Seminario" />  
+        <title>Deuda Técnica - Luis García Castro</title>
+        
+		<link rel="stylesheet" href="css/style.css" />
+		
+    </head>
+    <body class="impress-not-supported">
+
+	<div class="fallback-message">
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<div id="impress">
+
+		<!-- Titulo -->
+		
+		<div id="titulo" class="step slide with_height" data-x="3500" data-y="2000" data-z="1000" data-scale="5" data-rotate-x="-25" >
+			<div class="title">
+				<p><em>Deuda Técnica</em></p>
+			</div>
+			<div class="subtitle">
+				<p>Para desarrolladores... ¡y managers!</p>
+			</div>
+			<div class="author">
+				<p>Octubre 2014 <br />Luis García Castro</p>
+			</div>
+		</div>
+
+		<div id="comentarios-recurrentes" class="step slide" data-x="3500" data-y="2000" data-z="-20000" data-scale="1">
+			<div class="section-title">
+				<h4>Comentarios recurrentes</h4>
+			</div>
+			
+			<div class="notes">
+				<ul>
+					<li>¿No teníamos documentados estos servicios?</li>
+					<li>Pensé que habíamos probado este módulo...</li>
+					<li>Si arreglo esto se romperá eso otro... creo</li>
+					<li>No toques eso, la última vez que alguien tocó se rompió XXX</li>
+					<li>Pon un comentario y ya lo miraremos después</li>
+					<li>Pon un TODO y ya lo miraremos después</li>
+					<li>Pon un comentario, ahí justo encima del TODO</li>
+					<li>¡Yo sólo toqué una línea!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="sondeo" class="step slide" data-x="2500" data-y="-1000" data-scale="3" data-rotate="-30">
+			<div class="section-title">
+				<h3>La deuda técnica... <br /><em>¿es buena o mala?</em></h3>
+			</div>
+		</div>
+
+		<div id="motivos" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Motivos para dar esta charla</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Orientar al personal técnico sobre la toma de <em>decisiones de negocio</em></li>
+					<li>Orientar al personal de negocio sobre la toma de <em>decisiones técnicas</em></li>
+					<li>Ayudar a que la deuda técnica pueda ser gestionada de forma más <em>explícita y transparente</em></li>
+					<li><em>Aumentar la conciencia</em> sobre este asunto</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Contenido -->
+
+		<div id="contenido" class="step slide" data-x="8500" data-y="2500" data-scale="5">
+			<div class="slide-title">
+				<h3><em>Contenido</em></h3>
+			</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<li>Introducción a la deuda técnica</li>
+					<ul class="lv1_indent">
+						<li>Analogías con la deuda financiera</li>
+						<li>Tipos de deuda financiera</li>
+						<li>Síntomas</li>
+					</ul>
+					<li>Cómo, cuándo y por qué endeudarse</li>
+					<li>Deuda técnica vs código de mala calidad</li>
+					<li>Pagando la deuda técnica</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div id="intro" class="step slide" data-x="9000" data-y="4000" data-rotate="90">
+			<div class="slide-title"><em>Introducción</em></div>
+			<div class="slide-content">
+				<p><i>Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.</i></p>
+				<p><b><em>Ward Cunningham</em>, Marzo de 1992</b></p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>"Ward" Cunningham is an American computer programmer who developed the first wiki.</li>
+					<li>You start writing an application. In the beginning there is no need for user roles. Everyone can do anything. At some point you start having two different permissions for a specific action. The tech team considers whether to create a full fledged permission system, but at this point it really looks like over engineering. Some time later another thing requires the differentiation of users, and then another and another. The solution is refactoring it to have a decent permission system. To make this refactoring will take way more time than just adding another method, but will simplify the code and make future permissions to be added with one line of code, or even by just adding a row in the database.
+					<ul>
+						<li>* 4 now (the permission), 22 later (the refactoring, that now is a bit more complicated)</li> 
+						<li>* 21 now (the refactoring), 0 later (the permission)</li>
+						<li>* 4 now (the permission), no refactoring at all, and then 5 for the next permissions, and then 6, 7… until the point a new refactoring is suggested, now costing 50-something</li>
+					</ul>
+					</li>
+				</ul>
+			</div>			
+		</div>
+
+		<div id="analogias" class="step slide" data-x="8000" data-y="4000">
+			<div class="slide-title"><em>Analogías</em> con la deuda financiera</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><p><em>Interés</em></p></li>
+					<li><p>Amortizar <em>capital</em></p></li>
+					<li><p>Ampliar un <em>préstamo</em></p></li>
+					<li><p><em>Bancarrota</em></p></li>
+					<li><p><em>Inflación</em> técnica</p></li>
+					<li><p>Amnistía <em>fiscal</em></p></li>
+				</ul>
+			</div>
+			<div class="notes">
+				<ol type="a">
+					<li>Interés - Cada minuto que pasas con código poco limpio</li>
+					<li>Amortizar - Refactorizar</li>
+					<li>Ampliar un préstamo - Las negligencias de diseño</li>
+					<li>Bancarrota - Situación con un interés sobre la deuda tan grande que es imposible avanzar y es necesario una reescritura completa</li>
+					<li>Inflación Técnica - Cuando el actual nivel de nuestra tecnología es suficientemente viejo como para perder compatibilidad con el resto de la industria</li>
+					<li>Aminstía Fiscal - Desechar prototipos, productos o componentes y renunciar a usarlos</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="tipos-de-deuda" class="step slide" data-x="7000" data-y="4000" data-rotate="90">
+			<div class="slide-title">Tipos de deuda técnica</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li><em>Intencionada vs NO intencionada</em></li>
+					<li>Deuda de <em>diseño o arquitectura</em></li>
+					<li>Deuda de <em>calidad</em></li>
+					<li>Deuda en los <em>tests</em></li>
+					<li>Deuda en el <em>conocimiento</em> y la documentación</li>
+					<li>Deuda en el <em>entorno</em></li>
+				</ul>
+			</div>
+			<div class="notes">
+				<ul>
+				<li>Intencionada: “No hay tiempo para hacerlo multi-idioma, ya se hará en el futuro”</li>
+				<li>Intencionada: “No hay tiempo para completar los test, ya lo haremos cuando subamos a PRO”</li>
+				<li>No intencionada: Dejar que alguien escriba código que no sigue cierto estándar</li>
+				<li>No intencionada: Una decisión importante de diseño que finalmente fracasa</li>
+				<li>No intencionada: Dejar sin supervisión al programador junior</li>
+				<li>Diseño: soluciones no óptimas, atajos</li>
+				<li>Tests: Pocos test automáticos y demasiadas pruebas de regresión</li>
+				<li>Documentación: Sólo unos pocos conocen el sistema</li>
+				<li>Hardware, entornos,... demasiadas acciones manuales</li>
+				</ul>
+				 
+			</div>
+		</div>
+
+		<div id="sintomas" class="step slide" data-x="6250" data-y="4000">
+			<div class="slide-title">Síntomas</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li><p>Pérdida de <em>productividad</em>, <em>motivación</em>, ...</p></li>
+					<li><p>Incremento en los <em>test manuales</em></p></li>
+					<li><p><em>Retrasos</em> en entregas</p></li>
+					<li><p><em>Código duplicado</em></p></li>
+					<li><p>Código <em>ilegible</em></p></li>
+					<li><p>Incremento imparable de <em>defectos</em></p></li>
+					<li><p><em>Excesivo estrés</em> en cada entrega</p></li>
+					<li><p><em>Miedo</em> a tocar el código</p></li>
+					<li><p>Librerías <em>anticuadas</em></p></li>
+				</ul>
+			</div>
+			<div class="notes">
+				<ol type="a">
+					<li>Siempre que podamos medir la productividad (Scrum)</li>
+					<li>Dedicamos demasiado tiempo a pruebas de regresión</li>
+					<li>Cada vez es más difícil cumplir los deadlines</li>
+					<li>Conduce a anomalías y problemas en el soporte</li>
+					<li>Falta de calidad y control</li>
+					<li>El equipo sufre demasiada presión</li>
+					<li>El 80% del tiempo se pasa leyendo código, si no se entiende no se puede construir</li>
+					<li>Es todo tan delicado que no hay forma de tocar sin romper nada</li>
+					<li>Y no somos capaces de actualizar las versiones</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="ventajas-e-inconvenientes" class="step slide" data-x="6500" data-y="5000" data-rotate="-90">
+			<div class="slide-title">Ventajas e incovenientes</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>
+						<p>Algunas ventajas:</p>
+						<ul class="lv1_indent">
+							<li>Se acorta el <em>Time To Market</em></li>
+							<li>Se preserva el <em>capital</em> de la compañía (esencial en startups)</li>
+							<li>Se <em>aplazan</em> decisiones y ciertos costes de desarrollo</li>
+						</ul> 
+					</li>
+					<li>
+						<p>Y algunos inconvenientes:</p>
+						<ul class="lv1_indent">
+							<li>Reduce la <em>velocidad</em> y la <em>productividad</em></li>
+							<li>Aumenta el <em>riesgo</em></li>
+							<li><em>Limita</em> los nuevos desarrollos</li>
+							<li>Conduce a un <em>círculo vicioso</em></li>
+						</ul> 
+					</li>
+				</ul>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>The mantra created by LinkedIn’s founder Reid Hoffman “if you are not embarrassed by the first version of your product, you’ve launched too late” quickly became an excuse for an anything goes approach. Thousands of startups have launched and failed precisely for the lack of quality.</li>
+					<li>MVP vs MLP</li>
+					<li>Exercise: Draw your technical curve http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="como-evitar-la-deuda" class="step slide" data-x="7500" data-y="5000">
+			<div class="slide-title">Cómo evitar deuda no intencionada</div>
+			<div class="slide-content">
+				<ul>
+					<li><p>Automatiza (IC) los test todo lo posible (<em>¡unitarios y funcionales!</em>)</p></li>
+					<li><p><em>Comparte</em> el conocimiento (técnico y funcional)</p></li>
+					<li><p>Deja siempre el código tan <em>limpio</em> como lo encontraste, o si es posible <em>mejor</em></p></li>
+					<li><p>Concreta (si no lo hiciste ya) una buena <em>DoD</em></p></li>
+					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
+					<li><p>Limita el WIP, siempre</p></li>
+					<li><p><em>Monitoriza</em> en cada momento la deuda</p></li>
+					<li><p>Y en definitiva: <em>Nunca pidas permiso para hacer tu trabajo correctamente</em></p></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="como-endeudarse" class="step slide" data-x="8500" data-y="5000" data-rotate="90">
+			<div class="slide-title">Cómo endeudarse intencionadamente</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Toda la deuda intencionada <em>puede y debe ser trazada</em> (por definición)</li>
+					<li>Con la misma consideración que un <em>defecto</em></li>
+					<li>Incluye tu deuda en el <em>Product Backlog</em></li>
+					<li>Monitoriza la <em>velocidad</em> del proyecto</li>
+					<li>Monitoriza la cantidad de <em>retrabajo</em></li>
+					<li>Adapta tus presupuestos</li>
+					<li><em>Mide la deuda en dinero</em></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="deuda-vs-mala-calidad" class="step slide" data-x="5000" data-y="-1000" data-scale="3" data-rotate="30">
+			<div class="section-title">
+				<h3>Deuda técnica <br /><em>vs</em> <br />Código de mala calidad</h3>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>It’s a responsibility of the tech team to make business understand the consequences of this kind of action</li>
+					<li>Technical debt can be paid by refactoring. It takes time but it’s doable. But when code is just bad, refactoring is way, way harder.</li>
+					<li>Michael Feathers, have defined legacy code as code without tests: 
+						<blockquote>“Code without tests is bad code.
+						It doesn’t matter how well written it is; it doesn’t matter
+						how pretty or object-oriented or well-encapsulated it is.
+						With tests, we can change the behavior of our code quickly and verifiably.
+						Without them, we really don’t know if our code is getting better or worse.”</blockquote></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="pagando-la-deuda" class="step slide" data-x="-250" data-y="-1500" data-scale="3">
+			<div class="section-title">
+				<h3><em>Pagando</em><br />la deuda técnica</h3>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:
+					<ul>
+						<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and few rewrite projects take the huge necessary time to document everything.</li>
+						<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most unrealistic things one can try to do.</li>
+						<li>Business will not accept all new features to be halted. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
+						<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
+						<li>Given part of the problem was developer’s inexperience in coding itself, how can they guarantee that now they know better?</li>
+						<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. Will the rewrite be properly planned?</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="antes-de-pagar" class="step slide" data-x="-1000" data-y="-250" data-rotate="-90" data-scale="2">
+			<div class="slide-title"><em>Antes</em> de pagar la deuda técnica</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>¿Hemos estimado cuánto cuesta pagar y cuánto no pagar?</li>
+					<li>¿Nos creemos esas estimaciones?</li>
+					<li>¿Cuánto reduciremos el esfuerzo actual para dedicarlo a deuda?</li>
+					<li>¿Cuánto cuesta una solución <i>sucia</i>?</li>
+					<li>¿Cuánto cuesta una solución <i>limpia</i>?</li>
+					<li>¿Cuánto costaría hacer la solución <i>limpia</i> si haremos ahora la <i>sucia</i>?</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="como-se-paga" class="step slide" data-x="500" data-y="-250" data-rotate="90" data-scale="2">
+			<div class="slide-title">Cómo se paga la deuda técnica</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<li>Comenta con los responsables <em>técnicos</em> tu propuesta y el alcance de la misma</li>
+					<li><em>Mide</em> con ellos la deuda que queréis pagar</li>
+					<li>Comunica claramente las <em>implicaciones</em> a los responsables de negocio</li>
+					<li>Logra decisiones <em>explícitas</em> sobre si se debe amortizar <em>más o menos</em> deuda</li>
+					<li>Diseña estrategias para evitar que al pagar se genere <em>nueva deuda</em></li>
+					<li>Toma decisiones <em>explícitas</em> sobre <em>cuándo y cómo</em> se va a pagar</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="preguntas" class="step slide" data-x="3500" data-y="3400" data-scale="3" data-rotate-y="90">
+			<div class="section-title lower">
+				<h3>¿Preguntas?</h3>
+			</div>
+		</div>
+
+		<div id="bibliografia" class="step slide" data-x="3500" data-y="4500" data-scale="4">
+			<div class="slide-title">Bibliografía</div>
+			<div class="slide-content">
+
+				<p class="bibliografia">
+					<a href="http://c2.com/doc/oopsla92.html">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Ward Cunningham</em>&nbsp;&nbsp;&nbsp; The WyCash Portfolio Management System
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="https://medium.com/@joaomilho/festina-lente-e29070811b84">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Joao Milho</em>&nbsp;&nbsp;&nbsp; Technical Debt 101
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://www.ontechnicaldebt.com/blog/steve-mcconnell-on-categorizing-managing-technical-debt/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Steve McConnell</em>&nbsp;&nbsp;&nbsp; How to Categorize & Communicate Technical Debt
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://chadfowler.com/blog/2006/12/27/the-big-rewrite/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Chad Fowler</em>&nbsp;&nbsp;&nbsp; The Big Rewrite
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Henrik Kniberg</em>&nbsp;&nbsp;&nbsp; Good and Bad Technical Debt
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://docs.codehaus.org/display/SONAR/Technical+Debt+Calculation">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Olivier Gaudin</em>&nbsp;&nbsp;&nbsp; Technical Debt plugin para Sonar
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://www.nytimes.com/2012/12/09/technology/air-force-stumbles-over-software-modernization-project.html">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>NYTimes</em>&nbsp;&nbsp;&nbsp; Billion-Dollar Flop: Air Force Stumbles on Software Plan
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://es.slideshare.net/lemiorhan/technical-debt-do-not-underestimate-the-danger">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Lemi Orhan Ergin</em>&nbsp;&nbsp;&nbsp; Technical Debt: Do Not Underestimate The Danger
+					</a>
+				</p>
+
+			</div>
+		</div>
+		
+		<div id="gracias" class="step slide" data-y="3500" data-scale="5">
+			<div id="ty" class="slide-title"><h2>¡ Gracias !</h2></div>
+			<div class="slide-content">
+				<br />
+				<p id="name">
+					<em>Luis García Castro</em>
+				</p>
+				<p id="email">
+					<a href="mailto:luis.garcia@sopra.com">luis.garcia@sopra.com</a>
+				</p>
+				<p id="gplus">
+					<a href="mailto:luisgc@gmail.com">
+						<img src="img/social/google-plus.png" alt="Google Plus" class="rounded_icon" />
+						luisgc@gmail.com
+					</a>
+				</p>
+				<p id="linkedin">
+					<a href="http://www.linkedin.com/in/LuisGC">
+						<img src="img/social/linkedin.png" alt="LinkedIn" class="rounded_icon" />
+						http://www.linkedin.com/in/LuisGC
+					</a>
+				</p>
+				<p id="github">
+					<a href="https://github.com/LuisGC">
+						<img src="img/social/github.png" alt="GitHub" class="rounded_icon" />
+						https://github.com/LuisGC
+					</a>
+				</p>
+				<br />
+				<p id="creativeCommons">
+					<a href="http://creativecommons.org/licenses/by-sa/3.0/es/">
+						<img src="img/creative-commons.png" alt="Creative Commons" class="rounded_icon" />
+						<span class="footer"><i>Licencia Creative Commons <em>CC-BY-SA</em></i></span>
+					</a>
+				</p>
+				<p id="openSource">
+					<a href="https://github.com/bartaz/impress.js">
+						<img src="img/open-source-logo.png" alt="Impress.js" class="rounded_icon" />
+						<span class="footer">Presentación realizada con la herramienta Open Source <em>Impress.js</em></span>
+					</a>
+				</p>
+								
+			</div>
+		</div>
+
+		<div id="overview" class="step" data-x="3500" data-y="2000" data-rotate-x="-25" data-scale="12"></div>
+		
+	</div>
+	<script src="js/impress.js"></script>
+	<script src="js/impressConsole.js"></script>
+	<script>
+		impress().init();
+		impressConsole().init(css="css/impressConsole.css");
+		//impressConsole().open(); // If you want them to open automatically
+	</script>
+
+    </body>
+</html>
