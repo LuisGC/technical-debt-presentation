@@ -1,7 +1,7 @@
 Technical Debt for developers... ¡and managers!
 ====
 
-Technical Presentation (in Spanish, but I'll translate it) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
+Technical Presentation (both in English and Spanish) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
 
 View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https://luisgc.github.com/technical-debt-presentation)
 
