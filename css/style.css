@@ -32,10 +32,9 @@ body{
 /* Defaults */
 
 .step{
-    width: 900px;
- /* position:relative; */
+	position:relative;
     font-family: DroidSans;
-    font-size: 48px;
+    font-size: 20px;
     line-height: 1.5;
     
     -webkit-box-sizing: border-box;
@@ -68,8 +67,9 @@ body{
 
 .slide{
     display: block;    
-    width: 900px;
-    height: 700px;
+	width: 972px; /* screen 1080 */
+	height: 729px; /* screen 810 */ 
+	padding: 20px 20px;
     font-family: DroidSans;
     color: #EEE;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
@@ -129,10 +129,6 @@ body{
     width: inherit;
 }
 
-.section-title{
-    font-size: 50pt;
-}
-
 .with_logo{
     top: 10%;
 }
@@ -160,13 +156,17 @@ body{
     line-height: 60px;
 }
 
+.centered-title{
+	text-align: center;
+}
+
 .no-title{
     margin-top: 120px;
 }
 
 .slide-content{
     /*height: 473px;*/    
-    font-size: 30pt;
+    font-size: 28pt;
     line-height: 40pt;
     padding: 15px 40px;
     text-align: justify;
@@ -238,9 +238,18 @@ em{
     margin-left: -0.3em;
 }
 
+.event_logo {
+	width:250px;
+	vertical-align: middle;
+	position: absolute;
+	bottom:0;
+	left:0;
+	padding: 20px 25px;
+}
+
 .rounded_icon {
-	 width:64px;
-	 height:64px;
+	 width:48px;
+	 height:48px;
 	 vertical-align: middle;
 	 padding: 10px 0px;
 }
