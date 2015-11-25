@@ -121,6 +121,23 @@ body{
     width: inherit;
 }
 
+.section-image{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+	right: 0;
+	bottom:0;
+	z-index:-1;
+	position:absolute;
+	padding-bottom: 40px;
+}
+
+.fixed_height{
+	height: 300px !important;
+	width: auto;
+}
+
 .with_logo{
     top: 10%;
 }
@@ -335,7 +352,8 @@ a:link:hover {
     display: block;
 }
 
+/* EOF Fallback */
+
 .step .notes {
     display: none;
 }
-/* EOF Fallback */
