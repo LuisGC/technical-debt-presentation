@@ -11,15 +11,15 @@
 body{        
     font-family: DroidSans;    
     min-height: 740px;   
-    color: #EEE;
+    color: #666666;
     
-    background: #333333;
-    background: -webkit-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+    background: white;
+/*    background: -webkit-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
     background: -moz-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
     background: -o-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
     background: -ms-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
     background: radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
-    
+*/  
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -66,7 +66,6 @@ body{
 	height: 729px; /* screen 810 */ 
 	padding: 20px 20px;
     font-family: DroidSans;
-    color: #EEE;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
     font-size: 30px;
     line-height: 36px;
@@ -79,7 +78,7 @@ body{
 }
 
 .title{
-    color: #ff7700;
+    color: #666666;
     font-size: 80pt;
     padding: 20px;
     line-height: 65pt;
@@ -90,7 +89,7 @@ body{
 }
 
 .subtitle{
-    color: #FFF;
+    color: #666666;
     font-size: 40pt;
     line-height: 65pt;
     text-align: center;
@@ -112,11 +111,13 @@ body{
 }
 
 .section-title{
+    color: #ff7700;
     position: absolute;
     top: 30%;
     text-align: center;
     vertical-align: middle;
     font-size: 50pt;
+    font-weight: 900;
     line-height: 110px;
     width: inherit;
 }
@@ -151,10 +152,11 @@ body{
 }
 
 .slide-title{
-    color: #FFF;
+    color: #ff7700;
     height: 120px;
     font-size: 36pt;
-    line-height: 120px;
+    font-weight: bold;
+   line-height: 120px;
 }
 
 .slide-title-small{
@@ -180,6 +182,7 @@ body{
 
 em{
     color: #ff7700;
+    padding: 15px 0px;
 }
 
 .source{
@@ -279,7 +282,7 @@ em{
 }
 
 a{
-    color: #EEE;
+    color: #333333;
     padding: 0.2em 0.3em 0.4em 0.3em;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
