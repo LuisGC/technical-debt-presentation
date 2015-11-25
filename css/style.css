@@ -176,6 +176,17 @@ em{
     color: #ff7700;
 }
 
+.source{
+	font-family: "Open Sans";
+	padding: 10px;
+	line-height: 20pt;
+	text-align: right;
+	letter-spacing: normal;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
 .lv0_indent{
     margin-left: 30px;
 }
