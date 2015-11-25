@@ -8,11 +8,6 @@
     src: url('../fonts/DroidSans.ttf');
 }
 
-@font-face{
-    font-family: ExpletusSans;
-    src: url('../fonts/ExpletusSans-Regular.ttf');
-}
-
 body{        
     font-family: DroidSans;    
     min-height: 740px;   
@@ -85,7 +80,6 @@ body{
 
 .title{
     color: #ff7700;
-    font-family: ExpletusSans;
     font-size: 80pt;
     padding: 20px;
     line-height: 65pt;
@@ -97,7 +91,6 @@ body{
 
 .subtitle{
     color: #FFF;
-    font-family: ExpletusSans;
     font-size: 40pt;
     line-height: 65pt;
     text-align: center;
@@ -119,7 +112,6 @@ body{
 }
 
 .section-title{
-    font-family: ExpletusSans;
     position: absolute;
     top: 30%;
     text-align: center;
@@ -135,13 +127,6 @@ body{
 
 .lower{
     top: 40%;
-}
-
-#ty{
-    margin-top: 10px;
-    font-family: ExpletusSans;
-    text-align: center;
-    font-size: 50pt;
 }
 
 .slide-title{
