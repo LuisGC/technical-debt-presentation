@@ -242,7 +242,7 @@
 				<center><img src="img/gifs/without_words.gif" alt="Without words" class="img_back fixed_height" /></center>
 			</div>			
 			<div class="notes">
-				<p>Ron Jeffries:<p>
+				<p>Ron Jeffries thinks it is always <b>BAD</b>:<p>
 				<ul>
 					<li>Agile software development is about turning “next time” into “this time”, as often and as frequently as we can. It’s about improving the design as often as we can, as soon as we can.</li>
 					<li>Sooner, or later, it seems, we’ll have an idea or an understanding that we can’t put in, because we, or the software, has moved on. But if we can put off that moment as long as possible, we’ll do better</li>
@@ -371,10 +371,11 @@
 					<li><p><em>Excessive stress</em> on each delivery</p></li>
 					<li><p><em>Fear</em> to touch the code</p></li>
 					<li><p><em>Outdated</em> libraries</p></li>
+					<li>...</li>
 				</ul>
 			</div>
 			<div class="notes">
-				<ol type="a">
+				<ol>
 					<li>Whenever we can, we measure productivity (Scrum)</li>
 					<li>We spend too much time in regression testing</li>
 					<li>It is increasingly difficult to meet the deadlines</li>
@@ -394,15 +395,15 @@
 				<ul class="lv0_indent">
 					<li>
 						<p>Some advantages:</p>
-						<ul class="lv1_indent">
+						<ul class="lv0_indent">
 							<li>It shortens <em>Time To Market</em></li>
 							<li>It preserves the company <em>capital</em> (essential in startups)</li>
-							<li>Certain decisions and developtment costs are <em>postponed</em></li>
+							<li>Certain decisions and costs are <em>postponed</em></li>
 						</ul> 
 					</li>
 					<li>
 						<p>And some disadvantages:</p>
-						<ul class="lv1_indent">
+						<ul class="lv0_indent">
 							<li>Reduces <em>speed</em> and <em>productivity</em></li>
 							<li>Increases the <em>risk</em></li>
 							<li><em>Restricts</em> new developments</li>
@@ -415,7 +416,6 @@
 				<ul>
 					<li>The mantra created by LinkedIn’s founder Reid Hoffman “<i>if you are not embarrassed by the first version of your product, you’ve launched too late</i>” quickly became an excuse for an anything goes approach. Thousands of startups have launched and failed precisely for the lack of quality.</li>
 					<li><b>MVP vs MLP</b></li>
-					<li>Exercise: Draw your technical curve http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt</li>
 				</ul>
 			</div>
 		</div>
@@ -427,6 +427,16 @@
 			<div class="section-image">
 				<br /><br />
 				<center><img src="img/gifs/why_not.gif" alt="Why not" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<p>Exercise: Draw your technical curve (<a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt">link</a>)</p>
+				<ul>
+					<li>Real curve vs desired curve</li>
+					<li>old debt is bad and new debt is good</li>
+					<li>The <b>real</b> curve (chainshaw)</li>
+					<li>Debt baseline and debt ceiling</li>
+					<li>TDD and Scrum help</li>
+				</ul>
 			</div>
 		</div>
 
@@ -441,7 +451,7 @@
 					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
 					<li><p>Limit the <em>WIP</em>, always</p></li>
 					<li><p><em>Monitor</em> the debt at every moment</p></li>
-					<li><p>And finally: <em>Never ask for permission to do your job properly</em></p></li>
+					<li><p>And finally: <em>Never ask for permission to do your job properly!</em></p></li>
 				</ul>
 			</div>
 		</div>
@@ -488,16 +498,14 @@
 				<center><img src="img/gifs/developer.gif" alt="Developer" class="img_back fixed_height" /></center>
 			</div>
 			<div class="notes">
+				<p>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:</p>
 				<ul>
-					<li>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:
-					<ul>
-						<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and <b>few rewrite projects take the huge necessary time to document everything</b>.</li>
-						<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most <b>unrealistic</b> things one can try to do.</li>
-						<li><b>Business will not accept all new features to be halted</b>. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
-						<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
-						<li>Given part of the problem was developer’s inexperience in coding itself, how can they <b>guarantee</b> that now they know better?</li>
-						<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. <b>Will the rewrite be properly planned?</b></li>
-					</ul>
+					<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and <b>few rewrite projects take the huge necessary time to document everything</b>.</li>
+					<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most <b>unrealistic</b> things one can try to do.</li>
+					<li><b>Business will not accept all new features to be halted</b>. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
+					<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
+					<li>Given part of the problem was developer’s inexperience in coding itself, how can they <b>guarantee</b> that now they know better?</li>
+					<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. <b>Will the rewrite be properly planned?</b></li>
 				</ul>
 			</div>
 		</div>
@@ -593,7 +601,7 @@
 
 		<div id="questions" class="step slide" data-x="7300" data-y="5000" data-scale="3">
 			<div class="section-title">
-				<p><em>Ask Me Anything !!</em></p>
+				<h3><em>Ask Me Anything !!</em></h3>
 			</div>
 			<div class="section-image">
 				<center><img src="img/gifs/thank_you.gif" alt="Thank you" class="img_back fixed_height" /></center>
