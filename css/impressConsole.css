@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 20px;
     font-family: verdana, arial, sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     height: 92%;
 }
 
@@ -34,6 +34,7 @@ div#notes {
     overflow-x: hidden;
     overflow-y: auto;
     height: 95%;
+    font-size: 20px;
 }
 
 div#notes p {
