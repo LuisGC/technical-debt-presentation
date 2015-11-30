@@ -1,5 +1,5 @@
-Technical Debt for developers... ¡and managers!
-====
+Technical Seminary about Technical Debt by Luis García Castro
+=======
 
 Technical Presentation (both in English and Spanish) about **Technical Debt** by [Luis García Castro](https://github.com/LuisGC)
 
