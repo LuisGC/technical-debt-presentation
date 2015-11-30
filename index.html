@@ -12,6 +12,8 @@
         
 		<link rel="stylesheet" href="css/style.css" />
 		
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
     </head>
     <body class="impress-not-supported">
 
@@ -22,9 +24,7 @@
 
 	<div id="impress">
 
-		<!-- Titulo -->
-		
-		<div id="titulo" class="step slide with_height" data-x="3500" data-y="2000" data-z="1000" data-scale="5" data-rotate-x="-25" >
+		<div id="title" class="step slide with_height" data-x="3600" data-y="1500" data-z="1000" data-scale="5" data-rotate-x="-25" >
 			<div class="title">
 				<p><em>Technical debt</em></p>
 			</div>
@@ -34,16 +34,182 @@
 			<div class="author">
 				<p>November 2015 <br />Luis García Castro</p>
 			</div>
+			<div class="event_logo">
+				<img src="img/Codemotion_logo.png" alt="Codemotion logo" class="event_logo" />
+			</div>
 		</div>
 
-		<div id="comentarios-recurrentes" class="step slide" data-x="3500" data-y="2000" data-z="-20000" data-scale="1">
+		<div id="introduction" class="step slide" data-y="3500" data-scale="5">
+			<div class="slide-title">Who am I</div>
+			<div class="slide-content">
+				<p id="name">
+					<em>Luis García Castro</em>
+				</p>
+				<p>Software Engineer @ Sopra Steria</p>
+				<br />
+				<p id="gplus">
+					<a href="https://twitter.com/luiyo">
+						<img src="img/social/twitter.png" alt="Google Plus" class="rounded_icon" />
+						twitter.com/luiyo
+					</a>
+				</p>
+				<p id="linkedin">
+					<a href="http://www.linkedin.com/in/LuisGC">
+						<img src="img/social/linkedin.png" alt="LinkedIn" class="rounded_icon" />
+						linkedin.com/in/LuisGC
+					</a>
+				</p>
+				<p id="github">
+					<a href="https://github.com/LuisGC">
+						<img src="img/social/github.png" alt="GitHub" class="rounded_icon" />
+						github.com/LuisGC
+					</a>
+				</p>
+				<br />
+				<p id="creativeCommons">
+					<a href="http://creativecommons.org/licenses/by-sa/3.0/es/">
+						<img src="img/creative-commons.png" alt="Creative Commons" class="rounded_icon" />
+						<span class="footer"><i>Creative Commons <em>CC-BY-SA</em> license</i></span>
+					</a>
+				</p>
+				<p id="openSource">
+					<a href="https://github.com/bartaz/impress.js">
+						<img src="img/open-source-logo.png" alt="Impress.js" class="rounded_icon" />
+						<span class="footer">Presentation made with the awesome Open Source tool <em>Impress.js</em></span>
+					</a>
+				</p>
+								
+			</div>
+		</div>
+
+		<div id="recurring-comments" class="step slide" data-x="-750" data-y="-3500" data-scale="3">
 			<div class="section-title">
 				<h4>Recurring comments</h4>
 			</div>
-			
+			<div class="section-image">
+				<center><img src="img/gifs/doubtful.gif" alt="Without words" class="img_back fixed_height" /></center>
+			</div>
 			<div class="notes">
 				<ul>
-					<li>Have we not documented this services?</li>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-2" class="step slide" data-x="-750" data-y="-3500" data-z="-200" data-rotate-x="-10" data-scale="1">
+			<div class="section-title">
+				<p>Didn't we document 
+				<br />
+				this services?</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-3" class="step slide" data-x="-750" data-y="-3500" data-z="-300" data-rotate-x="20" data-scale="1">
+			<div class="section-title">
+				<p>I thought we had tested 
+				<br />
+				this module...</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-4" class="step slide" data-x="-750" data-y="-3500" data-z="-500" data-rotate-x="40" data-scale="1">
+			<div class="section-title">
+				<p>Fixing this will break that
+				<br />
+				...I think</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-5" class="step slide" data-x="-750" data-y="-3500" data-z="-700" data-rotate-x="60" data-scale="1">
+			<div class="section-title">
+				<p>Don't touch that!
+				<br />
+				last time someone touched $whatever broke</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-6" class="step slide" data-x="-750" data-y="-3500" data-z="-900" data-rotate-x="80" data-scale="1">
+			<div class="section-title">
+				<p>Write a comment and<br />we'll fix it later</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li><b>Write a TODO so it'll be fixed later</b></li>
+					<li><b>Write a comment there, just above the TODO</b></li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-7" class="step slide" data-x="-750" data-y="-3500" data-z="-1100" data-rotate-x="100" data-scale="1">
+			<div class="section-title">
+				<p>OMG!
+				<br />
+				I just changed ONE line!</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
 					<li>I thought we'd tested this module...</li>
 					<li>Fixing this will break that... I think</li>
 					<li>Don't touch that, last time someone touched $whatever broke</li>
@@ -54,14 +220,8 @@
 				</ul>
 			</div>
 		</div>
-
-		<div id="sondeo" class="step slide" data-x="2500" data-y="-1000" data-scale="3" data-rotate="-30">
-			<div class="section-title">
-				<h3>Technical Debt... <br /><em>is it good or bad?</em></h3>
-			</div>
-		</div>
-
-		<div id="motivos" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+		
+		<div id="reasons" class="step slide" data-x="8000" data-y="-500" data-scale="4">
 			<div class="slide-title">My reasons to give this talk</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
@@ -73,31 +233,34 @@
 			</div>
 		</div>
 
-		<!-- Contenido -->
-
-		<div id="contenido" class="step slide" data-x="8500" data-y="2500" data-scale="5">
-			<div class="slide-title">
+		<div id="content" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title centered-title">
 				<h3><em>Content</em></h3>
 			</div>
 			<div class="slide-content">
-				<ol class="lv0_indent">
-					<li>Introduction to tecnnical debt</li>
+				<ol class="lv2_indent">
+					<li><em>Introduction to technical debt</em></li>
 					<ul class="lv1_indent">
 						<li>Analogies with financial debt</li>
 						<li>Types of technical debt</li>
 						<li>Symptoms</li>
+						<li>Advantages and disadvantages</li>
 					</ul>
-					<li>How, when and why <i>borrow</i></li>
-					<li>Technical debt vs low quality code</li>
-					<li>Paying off technical debt</li>
+					<li><em>How, when and why <i>borrow</i></em></li>
+					<ul class="lv1_indent">
+						<li>Avoiding unitended debt</li>
+						<li>How to borrow intentionally</li>
+						<li>Technical debt vs low quality code</li>
+					</ul>
+					<li><em>Paying off technical debt</em></li>
 				</ol>
 			</div>
 		</div>
 		
-		<div id="intro" class="step slide" data-x="9000" data-y="4000" data-rotate="90">
+		<div id="intro" class="step slide" data-x="9000" data-y="4200" data-rotate="90">
 			<div class="slide-title"><em>Introduction</em></div>
 			<div class="slide-content">
-				<p><i>Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.</i></p>
+				<p><i>&laquo;Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.&raquo;</i></p>
 				<p><b><em>Ward Cunningham</em>, March 1992</b></p>
 			</div>
 			<div class="notes">
@@ -114,7 +277,7 @@
 			</div>			
 		</div>
 
-		<div id="analogias" class="step slide" data-x="8000" data-y="4000">
+		<div id="analogies" class="step slide" data-x="8500" data-y="4200">
 			<div class="slide-title"><em>Analogies</em> with financial debt</div>
 			<div class="slide-content">
 				<ul class="lv2_indent">
@@ -123,23 +286,23 @@
 					<li><p>Extending a <em>loan</em></p></li>
 					<li><p><em>Bankruptcy</em></p></li>
 					<li><p>Technical <em>inflation</em></p></li>
-					<li><p>fiscal <em>amnesty</em></p></li>
+					<li><p>Fiscal <em>amnesty</em></p></li>
 				</ul>
 			</div>
 			<div class="notes">
 				<ol type="a">
-					<li>Interest - Every minute you spend with not very clean code</li>
-					<li>Capital Pay off - Refactoring</li>
-					<li>Extending a loan - Design negligencies</li>
-					<li>Bankruptcy - Situation with an interest over the debt so large that it is impossible to move forward and we need a complete rewrite</li>
-					<li>Technical Inflation - When the current level of our technology is old enough to lose compatibility with the rest of the industry</li>
-					<li>Fiscal Amnesty - Discard prototypes, products or components and renounce to use them</li>
+					<li><b>Interest</b> - Every minute you spend with not very clean code</li>
+					<li><b>Capital Pay off</b> - Refactoring</li>
+					<li><b>Extending a loan</b> - Design negligencies</li>
+					<li><b>Bankruptcy</b> - Situation with an interest over the debt so large that it is impossible to move forward and we need a complete rewrite</li>
+					<li><b>Technical Inflation</b> - When the current level of our technology is old enough to lose compatibility with the rest of the industry</li>
+					<li><b>Fiscal Amnesty</b> - Discard prototypes, products or components and renounce to use them</li>
 				</ol>
 			</div>
 		</div>
 
-		<div id="tipos-de-deuda" class="step slide" data-x="7000" data-y="4000" data-rotate="90">
-			<div class="slide-title">Types of technical debt</div>
+		<div id="types-of-debt" class="step slide" data-x="7500" data-y="4200" data-rotate="90">
+			<div class="slide-title"><em>Types</em> of technical debt</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
 					<li><em>Intended vs NOT intended</em></li>
@@ -152,22 +315,22 @@
 			</div>
 			<div class="notes">
 				<ul>
-				<li>Intended: “No time to do it multi-language, that will be done in the future”</li>
-				<li>Intended: “No time to complete the tests, that will be done when we deploy this in PRO”</li>
-				<li>Not intended: Letting someone to write code that does not follow a certain standard</li>
-				<li>Not intended: An important design decission that ultimately fails</li>
-				<li>Not intended: Left the junior programmer unsupervised</li>
-				<li>Design: non optimal solutions, shortcuts</li>
-				<li>Tests: Not many automatic tests and too many regression testing</li>
-				<li>Documentation: Only a few properly know the system</li>
+				<li><b>Intended</b>: “No time to do it multi-language, that will be done in the future”</li>
+				<li><b>Intended</b>: “No time to complete the tests, that will be done when we deploy this in PRO”</li>
+				<li><b>Not intended</b>: Letting someone to write code that does not follow a certain standard</li>
+				<li><b>Not intended</b>: An important design decission that ultimately fails</li>
+				<li><b>Not intended</b>: Left the junior programmer unsupervised</li>
+				<li><b>Design</b>: non optimal solutions, shortcuts</li>
+				<li><b>Tests</b>: Not many automatic tests and too many regression testing</li>
+				<li><b>Documentation</b>: Only a few properly know the system</li>
 				<li>Hardware, environments,... too many manual actions</li>
 				</ul>
 				 
 			</div>
 		</div>
 
-		<div id="sintomas" class="step slide" data-x="6250" data-y="4000">
-			<div class="slide-title">Symptoms</div>
+		<div id="symptoms" class="step slide" data-x="7000" data-y="4200">
+			<div class="slide-title"><em>Symptoms</em></div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
 					<li><p>Loss of <em>productivity</em>, <em>motivation</em>, ...</p></li>
@@ -179,10 +342,11 @@
 					<li><p><em>Excessive stress</em> on each delivery</p></li>
 					<li><p><em>Fear</em> to touch the code</p></li>
 					<li><p><em>Outdated</em> libraries</p></li>
+					<li>...</li>
 				</ul>
 			</div>
 			<div class="notes">
-				<ol type="a">
+				<ol>
 					<li>Whenever we can, we measure productivity (Scrum)</li>
 					<li>We spend too much time in regression testing</li>
 					<li>It is increasingly difficult to meet the deadlines</li>
@@ -196,21 +360,21 @@
 			</div>
 		</div>
 
-		<div id="ventajas-e-inconvenientes" class="step slide" data-x="6500" data-y="5000" data-rotate="-90">
-			<div class="slide-title">Advantages and disadvantages</div>
+		<div id="advantages-and-disadvantages" class="step slide" data-x="5800" data-y="4200" data-rotate="-90">
+			<div class="slide-title"><em>Advantages</em> and <em>disadvantages</em></div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
 					<li>
 						<p>Some advantages:</p>
-						<ul class="lv1_indent">
+						<ul class="lv0_indent">
 							<li>It shortens <em>Time To Market</em></li>
 							<li>It preserves the company <em>capital</em> (essential in startups)</li>
-							<li>Certain decisions and developtment costs are <em>postponed</em></li>
+							<li>Certain decisions and costs are <em>postponed</em></li>
 						</ul> 
 					</li>
 					<li>
 						<p>And some disadvantages:</p>
-						<ul class="lv1_indent">
+						<ul class="lv0_indent">
 							<li>Reduces <em>speed</em> and <em>productivity</em></li>
 							<li>Increases the <em>risk</em></li>
 							<li><em>Restricts</em> new developments</li>
@@ -221,32 +385,50 @@
 			</div>
 			<div class="notes">
 				<ul>
-					<li>The mantra created by LinkedIn’s founder Reid Hoffman “if you are not embarrassed by the first version of your product, you’ve launched too late” quickly became an excuse for an anything goes approach. Thousands of startups have launched and failed precisely for the lack of quality.</li>
-					<li>MVP vs MLP</li>
-					<li>Exercise: Draw your technical curve http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt</li>
+					<li>The mantra created by LinkedIn’s founder Reid Hoffman “<i>if you are not embarrassed by the first version of your product, you’ve launched too late</i>” quickly became an excuse for an anything goes approach. Thousands of startups have launched and failed precisely for the lack of quality.</li>
+					<li><b>MVP vs MLP</b></li>
 				</ul>
 			</div>
 		</div>
 
+		<div id="how-when-why" class="step slide" data-x="8000" data-y="-3500" data-scale="3">
+			<div class="section-title centered-title">
+				<p>How, when and why</p>
+			</div>
+			<div class="section-image">
+				<br /><br />
+				<center><img src="img/gifs/why_not.gif" alt="Why not" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<p>Exercise: Draw your technical curve (<a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt">link</a>)</p>
+				<ul>
+					<li>Real curve vs desired curve</li>
+					<li>old debt is bad and new debt is good</li>
+					<li>The <b>real</b> curve (chainshaw)</li>
+					<li>Debt baseline and debt ceiling</li>
+					<li>TDD and Scrum help</li>
+				</ul>
+			</div>
+		</div>
 
-		<div id="como-evitar-la-deuda" class="step slide" data-x="7500" data-y="5000">
-			<div class="slide-title">Avoiding unintended debt</div>
+		<div id="avoiding-unintended-debt" class="step slide" data-x="5900" data-y="5200">
+			<div class="slide-title">Avoiding <em>unintended</em> debt</div>
 			<div class="slide-content">
 				<ul>
 					<li><p>Automate tests as much as possible (<em>CI</em> )</p></li>
 					<li><p><em>Share</em> the knowledge (technical and functional)</p></li>
 					<li><p>Leave the code <em>cleaner</em> than you found it</p></li>
 					<li><p>Settle on a good <em>DoD</em></p></li>
-					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
-					<li><p>Limit the WIP, always</p></li>
+					<li><p>Aim for <em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
+					<li><p>Limit the <em>WIP</em>. Always!</p></li>
 					<li><p><em>Monitor</em> the debt at every moment</p></li>
-					<li><p>And finally: <em>Never ask for permission to do your job properly</em></p></li>
+					<li><p>And finally: <em>Never ask for permission to do your job properly!</em></p></li>
 				</ul>
 			</div>
 		</div>
 		
-		<div id="como-endeudarse" class="step slide" data-x="8500" data-y="5000" data-rotate="90">
-			<div class="slide-title">How to borrow intentionally</div>
+		<div id="how-to-borrow" class="step slide" data-x="5900" data-y="5800" data-rotate="180">
+			<div class="slide-title">How to borrow <em>intentionally</em></div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
 					<li>All the inended debt <em>can and should be monitored</em> (by definition)</li>
@@ -258,17 +440,19 @@
 					<li><em>Measure debt in money</em></li>
 				</ul>
 			</div>
+			<div class="notes">
+				<p>It’s a responsibility of the tech team to make business <b>understand the consequences</b> of this kind of action</p>
+			</div>
 		</div>
 
-		<div id="deuda-vs-mala-calidad" class="step slide" data-x="5000" data-y="-1000" data-scale="3" data-rotate="30">
+		<div id="technical-debt-vs-bad-code" class="step slide" data-x="8800" data-y="5300" data-rotate-z="90" data-scale="2">
 			<div class="section-title">
-				<h3>Technical debt <br /><em>vs</em> <br />Low quality code</h3>
+				<p><em>Technical debt <br />vs <br />Low quality code</em></p>
 			</div>
 			<div class="notes">
 				<ul>
-					<li>It’s a responsibility of the tech team to make business understand the consequences of this kind of action</li>
-					<li>Technical debt can be paid by refactoring. It takes time but it’s doable. But when code is just bad, refactoring is way, way harder.</li>
-					<li>Michael Feathers, have defined legacy code as code without tests: 
+					<li>Technical debt can be paid by refactoring. It takes time but it’s doable. But when code is just bad, refactoring is <b>way, way harder</b>.</li>
+					<li><b>Michael Feathers</b>, have defined legacy code as code without tests: 
 						<blockquote>“Code without tests is bad code.
 						It doesn’t matter how well written it is; it doesn’t matter
 						how pretty or object-oriented or well-encapsulated it is.
@@ -278,40 +462,42 @@
 			</div>
 		</div>
 
-		<div id="pagando-la-deuda" class="step slide" data-x="-250" data-y="-1500" data-scale="3">
+		<div id="paying-technical-debt" class="step slide" data-x="-250" data-y="-1500" data-scale="3">
 			<div class="section-title">
-				<h3><em>Paying</em><br /> technical debt</h3>
+				<h3><em>Paying off</em>  technical debt</h3>
+			</div>
+			<div class="section-image">
+				<br /><br />
+				<center><img src="img/gifs/developer.gif" alt="Developer" class="img_back fixed_height" /></center>
 			</div>
 			<div class="notes">
+				<p>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:</p>
 				<ul>
-					<li>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:
-					<ul>
-						<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and few rewrite projects take the huge necessary time to document everything.</li>
-						<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most unrealistic things one can try to do.</li>
-						<li>Business will not accept all new features to be halted. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
-						<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
-						<li>Given part of the problem was developer’s inexperience in coding itself, how can they guarantee that now they know better?</li>
-						<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. Will the rewrite be properly planned?</li>
-					</ul>
+					<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and <b>few rewrite projects take the huge necessary time to document everything</b>.</li>
+					<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most <b>unrealistic</b> things one can try to do.</li>
+					<li><b>Business will not accept all new features to be halted</b>. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
+					<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
+					<li>Given part of the problem was developer’s inexperience in coding itself, how can they <b>guarantee</b> that now they know better?</li>
+					<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. <b>Will the rewrite be properly planned?</b></li>
 				</ul>
 			</div>
 		</div>
 		
-		<div id="antes-de-pagar" class="step slide" data-x="-1000" data-y="-250" data-rotate="-90" data-scale="2">
+		<div id="before-paying-the-debt" class="step slide" data-x="-1000" data-y="500" data-rotate="-90" data-scale="2">
 			<div class="slide-title"><em>Before</em> paying the debt...</div>
 			<div class="slide-content">
 				<ul class="lv0_indent">
-					<li>Have we estimated how much it costs paying and not paying?</li>
-					<li>Do we believe the estimates?</li>
-					<li>How will we reduce the current effort to spend it on debt?</li>
-					<li>How much does a <i>dirty</i> solution cost?</li>
-					<li>How much does the <i>clean</i> solution cost?</li>
-					<li>How much will the <i>clean</i> solution cost if we do the <i>dirty</i> one now?</li>
+					<li>Have we <em>estimated</em> how much it costs paying and not paying?</li>
+					<li>Do we <em>believe</em> the estimates?</li>
+					<li>How will we reduce the current effort to <em>spend</em> it on debt?</li>
+					<li>How much does a <em>dirty</em> solution cost?</li>
+					<li>How much does the <em>cleanest</em> solution cost?</li>
+					<li>How much will a <i>clean</i> solution cost if we do the <i>dirty</i> one <em>now</em>?</li>
 				</ul>
 			</div>
 		</div>
 
-		<div id="como-se-paga" class="step slide" data-x="500" data-y="-250" data-rotate="90" data-scale="2">
+		<div id="how-to-pay-off" class="step slide" data-x="500" data-y="500" data-rotate="90" data-scale="2">
 			<div class="slide-title">How to pay off technical debt</div>
 			<div class="slide-content">
 				<ol class="lv0_indent">
@@ -325,14 +511,37 @@
 			</div>
 		</div>
 
-		<div id="preguntas" class="step slide" data-x="3500" data-y="3400" data-scale="3" data-rotate-y="90">
-			<div class="section-title lower">
-				<h3>Questions ?</h3>
+		<div id="survey" class="step slide" data-x="5300" data-y="-3500" data-scale="3" >
+			<div class="section-title">
+				<p>OK, but... <em>is it good or bad?</em></p>
 			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/without_words.gif" alt="Without words" class="img_back fixed_height" /></center>
+			</div>			
 		</div>
 
-		<div id="bibliografia" class="step slide" data-x="3500" data-y="4500" data-scale="4">
-			<div class="slide-title">Bibliography</div>
+		<div id="visual-definition" class="step slide" data-x="2200" data-y="-3000" data-scale="3" >
+			<div class="slide-title">
+				<p>The most widespread opinion:</p>
+			</div>
+			<div class="slide-content">
+				<br /><br />
+				<center><img src="img/technical-debt-chart.jpg" alt="Visual definition of Technical Debt" class="img_back maxed_height" /></center>
+				<div class="source">
+					<p>Source: <a href="http://softwareengineeringdaily.com/2015/11/17/machine-learning-and-technical-debt-with-d-sculley/">Software Engineering Daily</a></p>
+				</div>
+			</div>
+			<div class="notes">
+				<p>Ron Jeffries thinks it is always <b>BAD</b>:<p>
+				<ul>
+					<li>Agile software development is about turning “next time” into “this time”, as often and as frequently as we can. It’s about improving the design as often as we can, as soon as we can.</li>
+					<li>Sooner, or later, it seems, we’ll have an idea or an understanding that we can’t put in, because we, or the software, has moved on. But if we can put off that moment as long as possible, we’ll do better</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="bibliography" class="step slide" data-x="3500" data-y="5000" data-scale="4">
+			<div class="slide-title centered-title">Bibliography</div>
 			<div class="slide-content">
 
 				<p class="bibliografia">
@@ -383,50 +592,22 @@
 						<em>Lemi Orhan Ergin</em>&nbsp;&nbsp;&nbsp; Technical Debt: Do Not Underestimate The Danger
 					</a>
 				</p>
-
+				<p class="bibliografia">
+					<a href="http://ronjeffries.com/articles/015-11/tech-debt/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Ron Jeffries</em>&nbsp;&nbsp;&nbsp; Technical Debt – Bad metaphor or worst metaphor?
+					</a>
+				</p>
 			</div>
 		</div>
-		
-		<div id="gracias" class="step slide" data-y="3500" data-scale="5">
-			<div id="ty" class="slide-title"><h2>Thanks !</h2></div>
-			<div class="slide-content">
-				<p id="name">
-					<em>Luis García Castro</em>
-				</p>
-				<br />
-				<p id="gplus">
-					<a href="mailto:luisgc@gmail.com">
-						<img src="img/social/google-plus.png" alt="Google Plus" class="rounded_icon" />
-						luisgc@gmail.com
-					</a>
-				</p>
-				<p id="linkedin">
-					<a href="http://www.linkedin.com/in/LuisGC">
-						<img src="img/social/linkedin.png" alt="LinkedIn" class="rounded_icon" />
-						http://www.linkedin.com/in/LuisGC
-					</a>
-				</p>
-				<p id="github">
-					<a href="https://github.com/LuisGC">
-						<img src="img/social/github.png" alt="GitHub" class="rounded_icon" />
-						https://github.com/LuisGC
-					</a>
-				</p>
-				<br />
-				<p id="creativeCommons">
-					<a href="http://creativecommons.org/licenses/by-sa/3.0/es/">
-						<img src="img/creative-commons.png" alt="Creative Commons" class="rounded_icon" />
-						<span class="footer"><i>Creative Commons <em>CC-BY-SA</em> license</i></span>
-					</a>
-				</p>
-				<p id="openSource">
-					<a href="https://github.com/bartaz/impress.js">
-						<img src="img/open-source-logo.png" alt="Impress.js" class="rounded_icon" />
-						<span class="footer">Presentation made with the Open Source tool <em>Impress.js</em></span>
-					</a>
-				</p>
-								
+
+		<div id="questions" class="step slide" data-x="7300" data-y="5000" data-scale="3">
+			<div class="section-title">
+				<h3><em>Ask Me Anything !!</em></h3>
 			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/thank_you.gif" alt="Thank you" class="img_back fixed_height" /></center>
+			</div>			
 		</div>
 
 		<div id="overview" class="step" data-x="3500" data-y="2000" data-rotate-x="-25" data-scale="12"></div>

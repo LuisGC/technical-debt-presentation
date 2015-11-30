@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: DroidSans;
+    src: url('../fonts/DroidSans.ttf');
+}
+
+body{        
+    font-family: DroidSans;    
+    min-height: 740px;   
+    color: #666666;
+    
+    background: white;
+/*    background: -webkit-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+    background: -moz-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+    background: -o-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+    background: -ms-radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+    background: radial-gradient(center bottom, circle farthest-corner, #666666, #333333, black);
+*/  
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Defaults */
+
+.step{
+	position:relative;
+    font-family: DroidSans;
+    font-size: 20px;
+    line-height: 1.5;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;    
+    
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { 
+	opacity: 1
+}
+
+.slide{
+    display: block;    
+	width: 972px; /* screen 1080 */
+	height: 729px; /* screen 810 */ 
+	padding: 20px 20px;
+    font-family: DroidSans;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    position: relative;  
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.title{
+    color: #666666;
+    font-size: 80pt;
+    padding: 20px;
+    line-height: 65pt;
+    text-align: center;
+    position: relative;
+    letter-spacing: normal;
+    top: 25%
+}
+
+.subtitle{
+    color: #666666;
+    font-size: 40pt;
+    line-height: 65pt;
+    text-align: center;
+    position: relative;
+    letter-spacing: normal;
+    top: 25%
+}
+
+.author{
+    color: #ff7700;
+    font-family: DroidSans;
+    font-size: 30pt;
+    padding: 20px;
+    line-height: 40pt;
+    text-align: right;
+    position: relative;
+    letter-spacing: normal;
+    top: 40%
+}
+
+.section-title{
+    color: #ff7700;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50pt;
+    font-weight: 900;
+    line-height: 110px;
+    width: inherit;
+}
+
+.section-image{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+	right: 0;
+	bottom:0;
+	z-index:-1;
+	position:absolute;
+	padding-bottom: 40px;
+}
+
+.fixed_height{
+	height: 300px !important;
+	width: auto;
+}
+
+.maxed_height{
+	max-height: 80%;
+}
+
+.with_logo{
+    top: 10%;
+}
+
+.lower{
+    top: 40%;
+}
+
+.slide-title{
+    color: #ff7700;
+    height: 120px;
+    font-size: 36pt;
+    font-weight: bold;
+   line-height: 120px;
+}
+
+.slide-title-small{
+    font-size: 36pt;
+    line-height: 60px;
+}
+
+.centered-title{
+	text-align: center;
+}
+
+.no-title{
+    margin-top: 120px;
+}
+
+.slide-content{
+    /*height: 473px;*/    
+    font-size: 28pt;
+    line-height: 40pt;
+    padding: 15px 40px;
+    text-align: justify;
+}
+
+em{
+    color: #ff7700;
+    padding: 15px 0px;
+}
+
+.source{
+	font-family: "Open Sans";
+	padding: 10px;
+	line-height: 20pt;
+	text-align: right;
+	letter-spacing: normal;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+.lv0_indent{
+    margin-left: 30px;
+}
+
+.lv1_indent{
+    margin-left: 60px;
+}
+
+.lv2_indent{
+    margin-left: 120px;
+}
+
+/* EOF Defaults */
+
+/* Content */
+
+#overview { display: none }
+
+.impress-on-overview .step {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#slide_details{
+    font-size: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 5px;
+}
+
+#slide_details p{
+    text-align: right;
+}
+
+.footer{
+	text-align: right;
+    vertical-align: bottom;
+    font-size: 18pt;
+}
+
+.bibliografia{
+    font-size: 20pt;
+}
+
+#thank-you p{
+    margin-bottom: 10px;
+}
+
+#thank-you p img{
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+#name{
+    font-size: 40pt;
+}
+
+#email{
+    margin-bottom: 20px !important;
+    margin-left: -0.3em;
+}
+
+.event_logo {
+	width:250px;
+	vertical-align: middle;
+	position: absolute;
+	bottom:0;
+	left:0;
+	padding: 20px 25px;
+}
+
+.rounded_icon {
+	 width:48px;
+	 height:48px;
+	 vertical-align: middle;
+	 padding: 10px 0px;
+}
+
+.small_rounded_icon {
+	 width:32px;
+	 height:32px;
+	 vertical-align: middle;
+	 padding: 10px 0px;
+}
+
+a{
+    color: #333333;
+    padding: 0.2em 0.3em 0.4em 0.3em;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a:link{
+    -webkit-transition: 0.3s;
+    -moz-transition:    0.3s;
+    -ms-transition:     0.3s;
+    -o-transition:      0.3s;
+    transition:         0.3s;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+a:link:hover {
+    background: rgba(255,255,255, 0.2);
+}
+
+.img_tb{
+    width: 824px;
+    margin: 0 auto;
+}
+
+.img_tb td{
+    text-align: center;
+    padding: 3px;
+}
+
+/* EOF Content */
+
+/* Fallback */
+
+.fallback-message {
+    font-family: DroidSans;
+    line-height: 1.3;
+    
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+/*
+.impress-not-supported .slide{
+    background: #333;
+    border: #666 1px solid;
+    
+    -webkit-box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+    box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+}
+*/
+.impress-not-supported .slide .slide-title{
+    padding: 10px 15px 0 15px;
+}
+
+.impress-not-supported .slide .slide-content{
+    padding: 15px 40px;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+/* EOF Fallback */
+
+.step .notes {
+    display: none;
+}

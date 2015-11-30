@@ -11,9 +11,9 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
  + Analogies with financial debt
  + Types of technical debt
  + Symptoms
-+ How, when and why acquire debt?
-+ Technical debt vs bad code
-+ Paying the technical debt
++ How, when and why borrow?
++ Technical debt vs low quality code
++ Paying off the technical debt
 
 # Resources
 
@@ -34,3 +34,4 @@ View in GitHub-Pages: [Technical Debt for developers... ¡and managers!] (https:
 * [Olivier Gaudin: Technical Debt plugin for Sonar] (http://docs.codehaus.org/display/SONAR/Technical+Debt+Calculation)
 * [The New York Times: Billion-Dollar Flop: Air Force Stumbles on Software Plan] (http://www.nytimes.com/2012/12/09/technology/air-force-stumbles-over-software-modernization-project.html)
 * [Lemi Orhan Ergin: Technical Debt: Do Not Underestimate The Danger] (http://es.slideshare.net/lemiorhan/technical-debt-do-not-underestimate-the-danger)
+* [Ron Jeffries: Technical Debt – Bad metaphor or worst metaphor?] (http://ronjeffries.com/articles/015-11/tech-debt/)

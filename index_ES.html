@@ -11,7 +11,9 @@
         <title>Deuda Técnica - Luis García Castro</title>
         
 		<link rel="stylesheet" href="css/style.css" />
-		
+   
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
     </head>
     <body class="impress-not-supported">
 
@@ -22,8 +24,6 @@
 
 	<div id="impress">
 
-		<!-- Titulo -->
-		
 		<div id="titulo" class="step slide with_height" data-x="3500" data-y="2000" data-z="1000" data-scale="5" data-rotate-x="-25" >
 			<div class="title">
 				<p><em>Deuda Técnica</em></p>
@@ -32,7 +32,7 @@
 				<p>Para desarrolladores... ¡y managers!</p>
 			</div>
 			<div class="author">
-				<p>Octubre 2014 <br />Luis García Castro</p>
+				<p>November 2015 <br />Luis García Castro</p>
 			</div>
 		</div>
 
@@ -97,7 +97,7 @@
 		<div id="intro" class="step slide" data-x="9000" data-y="4000" data-rotate="90">
 			<div class="slide-title"><em>Introducción</em></div>
 			<div class="slide-content">
-				<p><i>Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.</i></p>
+				<p><i>&laquo;Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.&raquo;</i></p>
 				<p><b><em>Ward Cunningham</em>, Marzo de 1992</b></p>
 			</div>
 			<div class="notes">
@@ -141,7 +141,7 @@
 		<div id="tipos-de-deuda" class="step slide" data-x="7000" data-y="4000" data-rotate="90">
 			<div class="slide-title">Tipos de deuda técnica</div>
 			<div class="slide-content">
-				<ul class="lv0_indent">
+				<ul class="lv1_indent">
 					<li><em>Intencionada vs NO intencionada</em></li>
 					<li>Deuda de <em>diseño o arquitectura</em></li>
 					<li>Deuda de <em>calidad</em></li>
@@ -169,7 +169,7 @@
 		<div id="sintomas" class="step slide" data-x="6250" data-y="4000">
 			<div class="slide-title">Síntomas</div>
 			<div class="slide-content">
-				<ul class="lv0_indent">
+				<ul class="lv1_indent">
 					<li><p>Pérdida de <em>productividad</em>, <em>motivación</em>, ...</p></li>
 					<li><p>Incremento en los <em>test manuales</em></p></li>
 					<li><p><em>Retrasos</em> en entregas</p></li>
@@ -204,8 +204,8 @@
 						<p>Algunas ventajas:</p>
 						<ul class="lv1_indent">
 							<li>Se acorta el <em>Time To Market</em></li>
-							<li>Se preserva el <em>capital</em> de la compañía (esencial en startups)</li>
-							<li>Se <em>aplazan</em> decisiones y ciertos costes de desarrollo</li>
+							<li>Se preserva el <em>capital</em> de la compañía</li>
+							<li>Se <em>aplazan</em> decisiones y ciertos costes</li>
 						</ul> 
 					</li>
 					<li>
@@ -232,13 +232,13 @@
 		<div id="como-evitar-la-deuda" class="step slide" data-x="7500" data-y="5000">
 			<div class="slide-title">Cómo evitar deuda no intencionada</div>
 			<div class="slide-content">
-				<ul>
+				<ul class="lv0_indent">
 					<li><p>Automatiza (IC) los test todo lo posible (<em>¡unitarios y funcionales!</em>)</p></li>
 					<li><p><em>Comparte</em> el conocimiento (técnico y funcional)</p></li>
 					<li><p>Deja siempre el código tan <em>limpio</em> como lo encontraste, o si es posible <em>mejor</em></p></li>
 					<li><p>Concreta (si no lo hiciste ya) una buena <em>DoD</em></p></li>
-					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
-					<li><p>Limita el WIP, siempre</p></li>
+					<li><p><em>Kaizen</em>: TDD, BDD, Fail Fast, Code Reviews, ...</p></li>
+					<li><p>Limita el <em>WIP</em>, siempre</p></li>
 					<li><p><em>Monitoriza</em> en cada momento la deuda</p></li>
 					<li><p>Y en definitiva: <em>Nunca pidas permiso para hacer tu trabajo correctamente</em></p></li>
 				</ul>
@@ -388,9 +388,8 @@
 		</div>
 		
 		<div id="gracias" class="step slide" data-y="3500" data-scale="5">
-			<div id="ty" class="slide-title"><h2>¡ Gracias !</h2></div>
+			<div id="slide-title" class="slide-title centered-title"><h2>¡ Gracias !</h2></div>
 			<div class="slide-content">
-				<br />
 				<p id="name">
 					<em>Luis García Castro</em>
 				</p>
